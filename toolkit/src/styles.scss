@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+.body {
+    flex: 1;
+    padding: 15px;
+    margin: 0 5%;
+    background: white;
+}
+
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .align-right {
+        position: absolute;
+        right: 15px;
+    }
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.borderless {
+    .input-group-prepend, .input-group-text, input {
+        background: transparent !important;
+    }
+
+    input {
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+}
+
+.centered-container {
+    display: flex;
+    align-items: center;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.padded {
+    padding: 0 15px;
+}
+
+.noPadding {
+    padding: 0 !important;
+}

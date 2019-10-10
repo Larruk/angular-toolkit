@@ -1,0 +1,16 @@
+
+<div class="row">
+    <div class="col-sm-4">
+        <app-todo-item [toDoItem]="newItem"></app-todo-item>
+        <br>
+        <button class="btn-primary pull-right" (click)="addNewItem()">Add New Item</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <ng-container *ngFor="let item of todoList">
+        <div class="form-group col-sm-4">
+            <app-todo-item [toDoItem]="item"></app-todo-item>
+        </div>
+    </ng-container>
+</div>
