@@ -2,3 +2,24 @@
 <p class="lead">
     This page is a demo of various web components I am building.
 </p>
+
+<div class="row">
+    <div class="form-group col-sm-4" *ngFor="let widget of widgets">
+        <app-loading-container [isLoading]="widget.isLoading">
+            <div class="card">
+                <div class="card-header">        
+                    <h5>
+                        <i class="p15-right" [ngClass]="widget.icon"></i>{{ widget.title }}
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p>{{ widget.description }}</p>
+                </div>            
+        
+                <div class="card-footer">
+                    <button (click)="widget.callback(widget)">{{ widget.buttonText }}</button>
+                </div>
+            </div>
+        </app-loading-container>
+    </div>
+</div>
