@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "debug": "ng build --prod && ng serve"
+    "debug": "ng build --prod && ng serve",
+    "deploy": "ng build --prod --base-href http://angular.lazaropadron.com && ngh"
   },
   "private": true,
   "dependencies": {
